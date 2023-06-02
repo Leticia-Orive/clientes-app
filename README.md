@@ -72,3 +72,12 @@ Es importante mencionar estos puntos.
 2.En el constructor, que se ejecuta lo primero, conseguimos una instancia del servicio de clientes, mediante la inyección de dependencias.
 3.Posteriormente se ejecuta ngOnInit(). En este punto ya se ha recibido el servicio de clientes, por lo que lo puedo usar para generar los valores que necesito en las propiedades del componente.
 4.El método nuevoCliente() es el que se ejecutará cuando, desde el formulario de alta, se produzca el envío de datos. En este código usamos el servicio clientesService, para agregar el cliente y generar un cliente nuevo, para que el usuario pueda seguir dando de alta clientes sin machacar los clientes anteriormente creados.
+
+10.Template del componente, con el formulario de alta de cliente
+Vamos a ver ahora cuál es el HTML del componente de alta de clientes, que básicamente contiene un formulario.
+
+Pero antes de ponernos con el HTML, vamos a hacer una importante tarea. Consiste en declarar en el módulo de clientes que se va a usar la directiva "ngModel". Para ello tenemos que hacer dos pasos:
+
+En el archivo "clientes.module.ts" comenzamos por importar "FormsModule".
+En el decorador, indicamos el imports del FormsModule.
+Ahora veamos el código del template, en el que reconocerás el uso de la propiedad "cliente" declarada en el constructor, así como el array de grupos.
