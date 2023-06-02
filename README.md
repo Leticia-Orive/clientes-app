@@ -41,3 +41,9 @@ Nuestro servicio no tiene nada del otro mundo. Vamos a ver su código y luego ex
 3.Agregar un cliente es un simple "push" al array de clientes, de un cliente recibido por parámetro.
 4.Crear un nuevo cliente es simplemente devolver un nuevo objeto, que tiene que respetar la interfaz, ya que en la función nuevoCliente() se está especificando que el valor de devolución será un objeto del tipo Cliente.
 5.Fíjate que en general está todo tipado, tarea opcional pero siempre útil.
+
+5-Declarar el servicio para poder usarlo en los componentes
+Una tarea fundamental para poder usar los servicios es declararlos en el "module" donde se vayan a usar.
+
+Para añadir el servicio en el module "clientes.module.ts", el primer paso es importarlo.
+Luego hay que declararlo en el array "providers".
