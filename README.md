@@ -7,3 +7,9 @@ Luego puedes entrar en la carpeta de la aplicación y lanzar el servidor web de 
 COMANDO:
 cd clientes app
 ng serve -o
+
+2-Creamos nuestro módulo de clientes
+La aplicación recién generada ya contiene un módulo principal, sin embargo, yo prefiero dejar ese módulo con pocas o ninguna cosa más de las que nos entregan por defecto al generar la aplicación básica. Por ello crearemos como primer paso un módulo nuevo, llamado "ClientesModule".
+
+Encargamos a Angular CLI la creación del esqueleto de nuestro módulo con el siguiente comando:
+COMANDO: ng generate module clientes
