@@ -13,3 +13,15 @@ La aplicación recién generada ya contiene un módulo principal, sin embargo, y
 
 Encargamos a Angular CLI la creación del esqueleto de nuestro módulo con el siguiente comando:
 COMANDO: ng generate module clientes
+
+3-Definir el modelo de datos
+Vamos a comenzar nuestro código por definir los tipos de datos que vamos a usar en esta aplicación. Vamos a trabajar con clientes y grupos.
+
+Crearemos el modelo de datos dentro de la carpeta del módulo "clientes". No existe en Angular un generador de este tipo de modelos, por lo que crearé el archivo a mano con el editor. Lo voy a nombrar "cliente.model.ts".
+
+En este archivo coloco las interfaces de TypeScript que definen los datos de mi aplicación.
+
+Como ves, he creado el tipo de datos Cliente y, por complicarlo un poquito más, el tipo de datos Grupo. Así, cada cliente generado pertenecerá a un grupo.
+
+NOTA:
+Esta parte de la creación de interfaces es perfectamente opcional. Solo la hacemos para usar esos tipos en la declaración de variables. El compilador de TypeScript nos avisará si en algún momento no respetamos estos tipos de datos, ayudando en tiempo de desarrollo y ahorrando algún que otro error derivado por despistes.
