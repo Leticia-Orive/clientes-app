@@ -94,3 +94,15 @@ Ahora, en el módulo raíz, "app.module.ts", debes declarar que vas a usar compo
 Hechos los dos pasos anteriores, ya puedes usar el componente en el template. Para ello simplemente tenemos que escribir su tag, en el archivo "app.component.html".
 Llegado a este punto, si todo ha ido bien, deberías ver ya el componente de alta de clientes funcionando en tu página.
 Nota: Si se produce cualquier error, entonces te tocará revisar los pasos anteriores o hacer una búsqueda con el texto del error que te devuelva la consola del navegador o el terminal, para ver dónde te has equivocado.
+
+12-Crear el componente listado-cliente
+Para acabar nuestra práctica vamos a crear un segundo componente de aplicación. Será el componente que nos muestre un listado de los clientes que se van generando.
+Como siempre, comenzamos con un comando del CLI.
+COMANDO:ng generate component clientes/listadoClientes
+
+Ahora el flujo de trabajo es similar al realizado para el componente anterior. Vamos detallando por pasos.
+
+Creas los import del servicio y de los tipos de datos del modelo.
+Inyectas el servicio en el constructor.
+En este componente tendremos como propiedad el array de clientes que el servicio vaya creando. Así pues, declaras dicho array de clientes
+Cuando se inicialice el componente tienes que solicitar los clientes al servicio. Esto lo hacemos en el método ngOnInit().
