@@ -59,3 +59,6 @@ Comenzaremos editando el archivo del componente y luego iremos a trabajar con el
 7-Agregar el servicio al componente
 Muy importante. Para poder usar el servicio anterior, tengo que agregarlo al componente recién creado, realizando el correspondiente import.
 Y posteriormente ya podré inyectar el servicio en el constructor del componente.
+
+8-Agregar el modelo de datos
+Para poder seguir usando los tipos de datos de mi modelo, vamos a agregar el archivo donde se generaron las interfaces.
