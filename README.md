@@ -47,3 +47,11 @@ Una tarea fundamental para poder usar los servicios es declararlos en el "module
 
 Para añadir el servicio en el module "clientes.module.ts", el primer paso es importarlo.
 Luego hay que declararlo en el array "providers".
+
+6-Crear componente que da de alta clientes
+Vamos a continuar nuestra práctica creando un primer componente. Es el que se encargará de dar de alta los clientes.
+
+Generamos el esqueleto usando el Angular CLI.
+COMANDO:ng generate component clientes/altaCliente
+
+Comenzaremos editando el archivo del componente y luego iremos a trabajar con el template. Por tanto, vamos a abrir el fichero "alta-cliente.component.ts".
