@@ -106,3 +106,8 @@ Creas los import del servicio y de los tipos de datos del modelo.
 Inyectas el servicio en el constructor.
 En este componente tendremos como propiedad el array de clientes que el servicio vaya creando. Así pues, declaras dicho array de clientes
 Cuando se inicialice el componente tienes que solicitar los clientes al servicio. Esto lo hacemos en el método ngOnInit().
+
+13-Codigo de la vista
+Ahora podemos ver cómo sería la vista, código HTML, del listado de componentes.
+
+No lo hemos comentado anteriormente, pero puedes darle un poco de estilo a los componentes editando el archivo de CSS. Por ejemplo, este sería un poco de CSS que podrías colocar en el fichero "listado-clientes.component.css".
