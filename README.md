@@ -55,3 +55,7 @@ Generamos el esqueleto usando el Angular CLI.
 COMANDO:ng generate component clientes/altaCliente
 
 Comenzaremos editando el archivo del componente y luego iremos a trabajar con el template. Por tanto, vamos a abrir el fichero "alta-cliente.component.ts".
+
+7-Agregar el servicio al componente
+Muy importante. Para poder usar el servicio anterior, tengo que agregarlo al componente recién creado, realizando el correspondiente import.
+Y posteriormente ya podré inyectar el servicio en el constructor del componente.
