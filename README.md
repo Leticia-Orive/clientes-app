@@ -25,3 +25,19 @@ Como ves, he creado el tipo de datos Cliente y, por complicarlo un poquito más,
 
 NOTA:
 Esta parte de la creación de interfaces es perfectamente opcional. Solo la hacemos para usar esos tipos en la declaración de variables. El compilador de TypeScript nos avisará si en algún momento no respetamos estos tipos de datos, ayudando en tiempo de desarrollo y ahorrando algún que otro error derivado por despistes.
+
+4-Crear un servicio para los clientes
+Lo ideal es crear un servicio (service de Angular) donde concentremos las tareas de trabajo con los datos de los clientes, descargando de código a los componentes de la aplicación y centralizando en un solo archivo la lógica de la aplicación.
+
+El servicio lo vamos a crear dentro de la carpeta del módulo clientes, por lo que especificamos la ruta completa.
+
+COMANDO:ng generate service clientes/clientes
+
+En el servicio tengo que hacer el import del modelo de datos, interfaces de Cliente y Grupo (creadas en el paso anterior).
+Nuestro servicio no tiene nada del otro mundo. Vamos a ver su código y luego explicaremos algún que otro punto destacable.
+
+1.Las dos propiedades del servicio contienen los datos que va a mantener. Sin embargo, las hemos definido como privadas, de modo que no se puedan tocar directamente y tengamos que usar los métodos del servicio creados para su acceso.
+2.Los grupos los construyes con un literal en el constructor. Generalmente los traerías de algún servicio REST o algo parecido, pero de momento está bien para empezar.
+3.Agregar un cliente es un simple "push" al array de clientes, de un cliente recibido por parámetro.
+4.Crear un nuevo cliente es simplemente devolver un nuevo objeto, que tiene que respetar la interfaz, ya que en la función nuevoCliente() se está especificando que el valor de devolución será un objeto del tipo Cliente.
+5.Fíjate que en general está todo tipado, tarea opcional pero siempre útil.
