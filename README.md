@@ -62,3 +62,13 @@ Y posteriormente ya podré inyectar el servicio en el constructor del componente
 
 8-Agregar el modelo de datos
 Para poder seguir usando los tipos de datos de mi modelo, vamos a agregar el archivo donde se generaron las interfaces.
+
+9-Código TypeScript completo del componente
+El código completo de "alta-cliente.component.ts", para la definición de mi componente, quedaría más o menos así:
+
+Es importante mencionar estos puntos.
+
+1.El componente declara un par de propiedades, el cliente y el array de grupos.
+2.En el constructor, que se ejecuta lo primero, conseguimos una instancia del servicio de clientes, mediante la inyección de dependencias.
+3.Posteriormente se ejecuta ngOnInit(). En este punto ya se ha recibido el servicio de clientes, por lo que lo puedo usar para generar los valores que necesito en las propiedades del componente.
+4.El método nuevoCliente() es el que se ejecutará cuando, desde el formulario de alta, se produzca el envío de datos. En este código usamos el servicio clientesService, para agregar el cliente y generar un cliente nuevo, para que el usuario pueda seguir dando de alta clientes sin machacar los clientes anteriormente creados.
