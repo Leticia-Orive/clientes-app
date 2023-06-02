@@ -8,5 +8,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [AltaClienteComponent],
   imports: [CommonModule, FormsModule],
   providers: [ClientesService],
+  exports: [AltaClienteComponent],
 })
 export class ClientesModule {}

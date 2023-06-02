@@ -81,3 +81,16 @@ Pero antes de ponernos con el HTML, vamos a hacer una importante tarea. Consiste
 En el archivo "clientes.module.ts" comenzamos por importar "FormsModule".
 En el decorador, indicamos el imports del FormsModule.
 Ahora veamos el código del template, en el que reconocerás el uso de la propiedad "cliente" declarada en el constructor, así como el array de grupos.
+
+11-Usar el componente Alta cliente
+Este componente, de alta de clientes, lo quiero usar desde el componente raíz de mi aplicación. Como el componente raíz está declarado en otro módulo, necesito hacer que conozca al AltaClienteComponent. Esto lo consigo en dos pasos:
+
+1.- Agregar al exports AltaClienteComponent
+En el módulo de clientes "clientes.module.ts" agrego al exports el componente que quiero usar desde otros módulos.
+
+2.- Importar en el módulo raíz
+Ahora, en el módulo raíz, "app.module.ts", debes declarar que vas a usar componentes que vienen de clientes.module.ts. Para ello tienes que hacer el correspondiente import, Y luego declaras el módulo en el array de imports.
+
+Hechos los dos pasos anteriores, ya puedes usar el componente en el template. Para ello simplemente tenemos que escribir su tag, en el archivo "app.component.html".
+Llegado a este punto, si todo ha ido bien, deberías ver ya el componente de alta de clientes funcionando en tu página.
+Nota: Si se produce cualquier error, entonces te tocará revisar los pasos anteriores o hacer una búsqueda con el texto del error que te devuelva la consola del navegador o el terminal, para ver dónde te has equivocado.
