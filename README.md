@@ -111,3 +111,7 @@ Cuando se inicialice el componente tienes que solicitar los clientes al servicio
 Ahora podemos ver cómo sería la vista, código HTML, del listado de componentes.
 
 No lo hemos comentado anteriormente, pero puedes darle un poco de estilo a los componentes editando el archivo de CSS. Por ejemplo, este sería un poco de CSS que podrías colocar en el fichero "listado-clientes.component.css".
+
+14-Usar el componente del listado
+Para usar este componente de listado de clientes, ya que lo queremos invocar desde el módulo raíz, tienes que ampliar el exports del module "clientes.module.ts".
+Como para el anterior componente, de alta de clientes, ya habíamos importado el módulo de clientes, no necesitas hacer nada más. Ahora ya puedes usar el usar el componente directamente en el template del componente raíz "app.component.html".

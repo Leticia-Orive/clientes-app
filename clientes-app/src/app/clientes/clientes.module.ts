@@ -9,6 +9,6 @@ import { ListadoClientesComponent } from './listado-clientes/listado-clientes.co
   declarations: [AltaClienteComponent, ListadoClientesComponent],
   imports: [CommonModule, FormsModule],
   providers: [ClientesService],
-  exports: [AltaClienteComponent],
+  exports: [AltaClienteComponent, ListadoClientesComponent],
 })
 export class ClientesModule {}
