@@ -1,0 +1,32 @@
+<h2>Nueva cine</h2>
+<p>
+  <span>Nombre:</span>
+  <input type="text" [(ngModel)]="cines.nombre" />
+</p>
+<p>
+  <span>Provincia:</span>
+  <input type="text" [(ngModel)]="cines.provincia" />
+</p>
+<p>
+  <span>Dirección:</span>
+  <input type="text" [(ngModel)]="cines.direccion" />
+</p>
+<p>
+  <span>codigoPostal:</span>
+  <input type="text" [(ngModel)]="cines.codigoPostal" />
+</p>
+<p>
+  <span>telefono:</span>
+  <input type="text" [(ngModel)]="cines.telefono" />
+</p>
+<p>
+  <span>Salas:</span>
+  <select [(ngModel)]="cines.Salas">
+    <option *ngFor="let salas of salas" value="{{ salas.id }}">
+      {{ salas.nombre }}
+    </option>
+  </select>
+</p>
+<p>
+  <button (click)="this.nuevoCine()">Guardar</button>
+</p>
