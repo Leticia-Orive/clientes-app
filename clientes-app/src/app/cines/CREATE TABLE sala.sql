@@ -1,0 +1,8 @@
+CREATE TABLE sala
+(
+    id INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+    name VARCHAR(100) NOT NULL,
+    
+
+    
+);
